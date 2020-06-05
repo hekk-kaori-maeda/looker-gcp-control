@@ -4,7 +4,7 @@ view: bigquery_data_access {
       SELECT
         *
       FROM
-        `cloudaudit_googleapis_com_data_access`
+        `bigquery_audit.cloudaudit_googleapis_com_data_access`
       WHERE
         {% condition date_filter %} timestamp {% endcondition %} ;;
   }
