@@ -5,7 +5,7 @@ view: gcp_billing_export {
         *,
         GENERATE_UUID() as pk
       FROM
-        infra-dev-271608:big_buery_audit
+        infra-dev-271608:bigquery_billing
       WHERE
         {% condition date_filter %} _PARTITIONTIME {% endcondition %} ;;
   }
